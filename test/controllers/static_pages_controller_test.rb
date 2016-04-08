@@ -6,7 +6,7 @@ class StaticPagesControllerTest < ActionController::TestCase
     @base_title = "Codeversiti"
   end
   
-  test "should get home" do
+  test "should get  home" do
     get :home
     assert_response :success
     assert_select "title", "Home | #{@base_title}"
