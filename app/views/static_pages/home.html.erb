@@ -5,15 +5,24 @@
 		
 	</head>
 	<body>
-		<h1> Welcome to Codeversiti</h1>
-		
-		<p>Learn to code. Collaborate to code. Earn from coding. </p>
-		
-		<p>Are you an organisation looking to hire professional computer programmers.
-			Lets helps you get the best</p>
 			
-		<p>Codeversiti is free for users and will remain free forever.</p>
-		
-		<p>Code lives here!</p>
+		<div class = "center jumbotron">
+			<%= link_to image_tag("logo.png", alt: "Codeversiti Logo"),
+			'http://codeversiti.com/' %>
+			<!--<h1> Welcome to Codeversiti</h1>-->
+			<hr />
+			
+			<h2>Learn to code. Collaborate to code. Earn from coding. </h2>
+			<hr />
+			
+			<h2>Are you an organisation looking to hire professional computer programmers.
+				Lets helps you get the best.</h2>
+			<hr />	
+			
+			<h2>Codeversiti is free for users and will remain that way.</h2>
+			<hr />
+			
+			<%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary"%>
+		</div>
 	</body>
 </html>
