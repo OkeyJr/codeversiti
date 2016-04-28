@@ -10,4 +10,8 @@ class User < ActiveRecord::Base
                     
   has_secure_password
   validates :password, length: {minimum: 6}
+  
+  has_attached_file :avatar, :styles => { :medium => "200x200>", :thumb => "100x100>" }, :default_url => ":style/missing.jpg"
+  validates_attachment_content_type :avatar, :content_type => /^image\/(png|gif|jpeg|jpg)/
+  
 end
